@@ -31,9 +31,6 @@ describe('Automatización del registro de usuario', () => {
         // Ingresar y confirmar la contraseña
         cy.get('[data-cy="input-password"]').type('MiPassword123!');
         cy.get('[data-cy="input-repetir-password"]').type('MiPassword123!');
-        
-        // Aceptar los términos y condiciones (si existen, si no, se omite esta línea)
-        // cy.get('[data-cy="checkbox-terminos"]').check();
 
         // Paso 3: Hacer clic en el botón de registro para enviar el formulario
         cy.get('button[type="submit"]').click();
